@@ -1,0 +1,70 @@
+
+.button-container {
+  display: flex;
+  margin: 0 auto;
+  width: 500px;
+}
+
+button {
+  padding: 20px;
+  background-color: lightgreen;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 30%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease-in-out;
+  width: 100px;
+  
+}
+
+#quat{
+    background-image: url('img/thanquat.png');
+    height: 550px;
+    width: 400px;
+    background-size: cover; /* or contain */
+    margin: 0 auto;
+}
+button.active {
+  background-color: red;
+}
+
+#quat img {
+  width: 400px;
+  margin-top: 20px;
+ 
+}
+
+
+.m1{
+ animation: spin 1s linear infinite; 
+}
+
+.m2{
+  animation: spin 0.6s linear infinite; 
+ }
+
+ .m3{
+  animation: spin 0.4s linear infinite; 
+
+ }
+
+ .m3{
+  animation: spin 0.4s linear infinite; 
+
+ }
+
+ .m4{
+  animation: spin 0.2s linear infinite; 
+
+ }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
